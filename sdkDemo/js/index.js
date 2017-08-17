@@ -4,7 +4,6 @@ import {
   StyleSheet,
   Text,
   DeviceEventEmitter,
-  NativeModules,
   View,
 } from 'react-native';
 

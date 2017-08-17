@@ -15,8 +15,10 @@ function _selectBleVersion() {
 }
 
 function getPeskController() {
+  if (peskController) {
+    return peskController;
+  }
   peskController = new v2();
-
   return peskController;
 }
 

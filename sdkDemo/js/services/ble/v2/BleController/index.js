@@ -135,6 +135,7 @@ class BleController {
     ) {
       return Promise.reject(new Error('[BLE] no connected peripheral'));
     }
+    console.log('=============== ', { service, characteristic, data });
     return retry(() =>
       BleManager.writeWithoutResponse(
         this.deviceUUID,

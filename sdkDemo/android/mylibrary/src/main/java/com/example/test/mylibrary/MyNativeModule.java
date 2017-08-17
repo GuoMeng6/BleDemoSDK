@@ -40,8 +40,8 @@ public class MyNativeModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void connectSuccessed(ReadableMap options){
         String status = options.getString("status");
-        Log.d(TAG,"========= status = "+status);
-        if(status == "success"){
+        Log.d(TAG,"========= status = "+status+"   "+(status == "success"));
+        if(status.equals("success")){
 //            HashMap map = new HashMap<String,Object>();
 //            map.put("status",)
 //            ArrayList list = new ArrayList<>();

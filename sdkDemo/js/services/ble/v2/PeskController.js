@@ -58,7 +58,7 @@ export default class PeskController {
   }
 
   moveUp() {
-    console.log('[Pesk] move up');
+    console.log('============ [Pesk] move up');
     this.currentAction = () => {
       this.writeUnderPlatform(this.serviceId, getUUID('FFF4'), [0x01]);
     };
